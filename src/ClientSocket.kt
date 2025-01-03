@@ -27,7 +27,7 @@ class Client(address: String, port: Int) {
         thread { read() }
         while (connected) {
             val input = readln()
-            if ("exit" in input) {
+            if ("EXIT" in input) {
                 connected = false
                 reader.close()
                 connection.close()

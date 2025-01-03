@@ -35,7 +35,7 @@ class ClientHandler(client: Socket) {
                 val text = reader.nextLine()
                 if (text == "EXIT"){
                     shutdown()
-                    continue
+                    break
                 }
                 write("Enter First Number: ")
                 val firstNumber = reader.nextLine()
